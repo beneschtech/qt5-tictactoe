@@ -22,6 +22,7 @@ private slots:
     void squareClicked();
     void newGame();
     void gameplayAction();
+    void slotAbout();
 
 private:
 // My functions

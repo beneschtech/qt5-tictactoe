@@ -1,2 +1,6 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/">
+        <file>logo.png</file>
+        <file>ttt.ico</file>
+    </qresource>
+</RCC>

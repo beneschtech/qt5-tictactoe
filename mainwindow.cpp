@@ -6,6 +6,7 @@
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "aboutdialog.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -30,6 +31,7 @@ MainWindow::MainWindow(QWidget *parent) :
         cell(i)->setIconSize(QSize(250,250));
     }
     connect(ui->actionNew,SIGNAL(triggered(bool)),this,SLOT(newGame()));
+    connect(ui->action_About_Tic_Tac_Toe,SIGNAL(triggered(bool)),this,SLOT(slotAbout()));
 
     QPixmap pmX(250,250);
     pmX.fill(Qt::transparent);
@@ -289,4 +291,10 @@ QPushButton *MainWindow::cell(int idx)
         case 8: return ui->cell8; break;
     }
     return NULL;
+}
+
+void MainWindow::slotAbout()
+{
+    AboutDialog dlg;
+    dlg.exec();
 }

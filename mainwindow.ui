@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Tic-Tac-Toe</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="beneschtech.qrc">
+    <normaloff>:/ttt.ico</normaloff>:/ttt.ico</iconset>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
@@ -324,7 +328,9 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="beneschtech.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>actionExit</sender>
